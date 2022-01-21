@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1884bc7-13f6-4ae9-adc7-dc96dfd17143" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/kotlin/com/example/signal/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/fonts/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/assets/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/images/Login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/images/Register.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/images/bgmain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/images/welcome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/models/Models.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/screens/auth/Login.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/screens/auth/Onboarding.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/screens/auth/Register.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/screens/home/UsersList.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/screens/inbox/Inbox.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/store/actions/authActions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/store/actions/chatActions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/store/actions/types.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/lib/store/reducer.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nami/nami_site/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../nami/nami_site/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../nami/nami_site/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../nami/nami_site/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nami2022/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nami2022/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/config.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/config/default.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/helpers/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/middleware/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/middleware/socket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/routes/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/routes/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/schema/Chats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/schema/Messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/schema/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node__signal/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workspace.code-workspace" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23zazWIMr8QH9lGqDLFsXcsBapr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1884bc7-13f6-4ae9-adc7-dc96dfd17143" name="Changes" comment="" />
+      <created>1642739634068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642739634068</updated>
+    </task>
+    <servers />
+  </component>
+</project>
