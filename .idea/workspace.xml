@@ -91,7 +91,7 @@
       <change beforePath="$PROJECT_DIR$/../../flutter-signal-app/test/widget_test.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../nami/nami_site/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../nami/nami_site/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../nami/nami_site/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../nami/nami_site/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nami2022/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nami2022/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../node__signal/config.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../node__signal/config/default.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../node__signal/helpers/misc.js" beforeDir="false" />
