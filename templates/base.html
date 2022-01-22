@@ -3,14 +3,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>NAMI Huntington</title>
   </head>
-<link rel="stylesheet" href="{% static 'style.css' %}"/>
+<!--<link rel="stylesheet" href="{% static 'style.css' %}"/>-->
  {% block nav %}
 {% endblock %}
-<body style="padding-top: 10.5rem;">
+<body style="padding-top: 10.5rem;background-image: url({% static 'img/marble2.jpg' %});">
+<style>
+    h1 {
+
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+ h2 {
+
+  font-family: 'Baskervville', serif;
+}
+  .memberbox {
+    padding: 1em 2.2em;
+
+    background:#DAE9C5;
+    border: 1px solid black;
+    border-top: 0;
+    border-radius:8px;
+    width:93%;
+    height: 20%;
+    margin-left:10px;
+    }
+</style>
 {% block content %}
 {% endblock %}
 
