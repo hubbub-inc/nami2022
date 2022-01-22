@@ -67,8 +67,8 @@ body {
 }
 
 .calendar {
-  width: 50%;
-  margin: 10px;
+  width: 70%;
+  margin: center;
 
   font-size: 13px;
 }
@@ -86,6 +86,7 @@ body {
 .calendar td {
   width: 200px;
   height: 150px;
+  margin: right;
   padding: 20px 0px 0px 5px;
 }
 
@@ -106,13 +107,22 @@ a {
   color: #17a2b8;
 }
  </style>
-<body>
+
+
+  <div style="margin:100px;" class="right"><div class="column">
+      {% for event in upcoming %}
+      <div class="row">{{event.title}}</div>
+      {% endfor %}
+<!--      <div class="row"><p>kldfs</p></div>-->
+<!--      <div class="row"><p>kldfs</p></div>-->
+<!--      <div class="row"><p>kldfs</p></div>-->
+<!--      <div class="row"><p>kldfs</p></div>-->
+  </div></div>
+
+{{calendar}}
 
 
 
-{{calendar}}  <div class="right" >{% include 'calendar_mini.html' %}</div>
-
-</body>
 
 
 

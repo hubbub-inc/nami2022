@@ -1,47 +1,34 @@
 <div class="col-md-4">
-        <div class="panel panel-danger">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-calendar"></span> 
-                    Select a Date
-                    </h3>
-                </div>
 
+                         {% for event in upcoming %}
+                        <li style="width:15%;" class="media">
+                            <div class="media-right">
+                                <div class="panel panel-danger text-center date">
+                                    <div class="panel-heading month">
+                                        <span class="panel-title strong">
+                                            {{ event.month }}
+                                        </span>
+                                    </div>
+                                    <div class="panel-body day text-danger">
+                                      {{ event.day }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp &nbsp &nbsp &nbsp</div>
+                            <div class="media-body" style="background-color:{{event.color}};">
+                              <h4 class="media-heading">
+                     <a href="{% url 'programs:program' pk=event.programid %}">          {{ event.title }}
+                             </a>
 
-<!--                <div class="panel-body">-->
-<!--                    <ul class="media-list">-->
-<!--                         {% for event in upcoming %}-->
-<!--                        <li style="width:95%;" class="media">-->
-<!--                            <div class="media-left">-->
-<!--                                <div class="panel panel-danger text-center date">-->
-<!--                                    <div class="panel-heading month">-->
-<!--                                        <span class="panel-title strong">-->
-<!--                                            {{ event.month }}-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                    <div class="panel-body day text-danger">-->
-<!--                                      {{ event.day }}-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div>&nbsp &nbsp &nbsp &nbsp</div>-->
-<!--                            <div class="media-body" style="background-color:{{event.color}};">-->
-<!--                              <h4 class="media-heading">-->
-<!--                     <a href="{% url 'programs:program' pk=event.programid %}">          {{ event.title }}-->
-<!--                             </a>-->
+                                </h4>
+                                <p>
+                                    Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.
+                                </p>
+                            </div>
 
-<!--                                </h4>-->
-<!--                                <p>-->
-<!--                                    Vivamus pulvinar mauris eu placerat blandit. In euismod tellus vel ex vestibulum congue.-->
-<!--                                </p>-->
-<!--                            </div>-->
+                        </li>   <br/>
 
-<!--                        </li>   <br/>-->
+                        {% endfor %}
 
-<!--                        {% endfor %}-->
-
-<!--                    </ul>-->
-<!--                    <a href="/events" class="btn btn-default btn-block">More Events »</a>-->
-<!--                </div>-->
-            </div>
-    </div>
+                    </ul>
+</div>

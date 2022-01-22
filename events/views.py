@@ -5,6 +5,7 @@ from django.views import generic
 from django.urls import reverse
 from django.utils.safestring import mark_safe
 import calendar
+import datetime
 
 from .models import *
 from .utils import Calendar
@@ -16,6 +17,14 @@ class CalendarView(generic.ListView):
     model = Meeting
     template_name = 'calendar.html'
 
+    context = {}
+    template = "landing.html"
+
+
+
+
+
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         d = get_date(self.request.GET.get('month', None))
@@ -24,13 +33,24 @@ class CalendarView(generic.ListView):
         context['calendar'] = mark_safe(html_cal)
         context['prev_month'] = prev_month(d)
         context['next_month'] = next_month(d)
+        today = datetime.date.today()
+
+        addweek = today + datetime.timedelta(days=20)
+
+        upcoming = [i for i in Meeting.objects.all()]
+
+        meetinglist = [
+            {'title': meeting.program.name, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
+             'month': meeting.start_time.strftime("%B"), 'color': meeting.get_color} for meeting in upcoming]
+        meetinglist.reverse()
+        context['upcoming'] = meetinglist
         return context
 
 def get_date(req_month):
     if req_month:
         year, month = (int(x) for x in req_month.split('-'))
         return date(year, month, day=1)
-    return datetime.today()
+    return datetime.date.today()
 
 def prev_month(d):
     first = d.replace(day=1)
