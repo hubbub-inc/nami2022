@@ -22,6 +22,28 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
  <style>
+ <style>
+    h1 {
+
+  font-family: 'IM Fell French Canon SC', serif;
+}
+
+ h2 {
+
+  font-family: 'Baskervville', serif;
+}
+  .memberbox {
+    padding: 1em 2.2em;
+
+    background:#DAE9C5;
+    border: 1px solid black;
+    border-top: 0;
+    border-radius:8px;
+    width:93%;
+    height: 20%;
+    margin-left:10px;
+    }
+
      body{
     background: #F4F7FD;
     margin-top:20px;
@@ -381,6 +403,7 @@ body {
   width: 50%;
   margin: left;
 
+
   font-size: 13px;
 }
 
@@ -417,10 +440,33 @@ ul {
 a {
   color: #17a2b8;
 }
+.headerbox {
+
+
+    background:#DAE9C5;
+    border: 1px solid black;
+    border-top: 0;
+    border-radius:2px;
+    width:93%;
+    height: 10%;
+    margin-left:10px;
+    }
  </style>
 
 
-  <div  class="left" style="padding:25px;"><div class="column">
+  <div  class="left" style="padding:5px;"><div class="column">
+
+       <div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
+
+
+
+
+
+            <div class="headerbox"> <p class="title">    <h2>Upcoming events</h2>
+
+
+  </div>
+           <br/>
       {% for event in upcoming %}
        <div class="card card-margin">
             <div class="card-header no-border">
@@ -443,12 +489,13 @@ a {
             </div>
         </div>
       {% endfor %}
+      </div>
 
 <!--      <div class="row"><p>kldfs</p></div>-->
 <!--      <div class="row"><p>kldfs</p></div>-->
 <!--      <div class="row"><p>kldfs</p></div>-->
 <!--      <div class="row"><p>kldfs</p></div>-->
-  </div></div>
+  </div></div> <div  class="left" style="padding:5px;"><h1>&nbsp&nbsp</h1></div>
 
 {{calendar}}
 
