@@ -1,0 +1,38 @@
+
+{% extends 'base.html'%}
+{% load static %}
+{% block nav %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<body>
+<div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
+
+
+
+
+         <br/><br/>
+     <div class="column">
+    <div class="card">
+     <div class="container" style="height:20%;">
+        <h1>NAMI HUNTINGTON</h1>
+
+        <h2>Thanks for visiting the official page for NAMI Huntington. Here you will find information about our
+            upcoming programs as well as useful information about mental illness</h2>
+
+
+      </div>
+        </div>
+         <br/><br/>
+         <div class="grnpan"><h3>NOTE: This web page is under construction. More information and content will be available in the coming weeks</h3></div>
+
+<br/><br/>
+    {% include 'calendar_mini.html' %}
+
+    </div>
+                    <a href="/events" class="btn btn-default btn-block">More Events »</a>
+
+</body>
+
+{% endblock %}

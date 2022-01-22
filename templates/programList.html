@@ -1,0 +1,126 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block nav %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+
+
+{% block content %}
+<style>
+<!--body {-->
+<!--background-image: url("{% static 'img/brainhead.jpg' %}");-->
+<!--background-size: contain;-->
+<!-- background-repeat: repeat-x;-->
+<!-- padding-top: 4.5rem;-->
+
+
+
+<!--}-->
+
+.accordion {
+
+  color: #444;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline-style: solid;
+  font-size: 25px;
+  transition: 0.4s;
+  white-space: initial;
+}
+
+.active, .accordion:hover {
+
+}
+
+.panel {
+  padding: 18px 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+   width: 100%;
+   padding-right: 50%;
+
+   height: 40%;
+}
+</style>
+
+<body style="padding-top: 20px;">
+<br/><br/><br/><br/>
+
+     <div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
+
+<!--                   <h2 style="color:red; ">{{title}}</h2>-->
+<!--        <strong><p style="color:red;">{{subtitle}}</p></strong>-->
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2>{{title}}</h2>
+
+        <p>{{subtitle}}</p>
+
+
+      </div>
+    </div>
+      <br/><br/>
+      <p><b>if you plan to participate in any of the classes or support groups, please contact Ellen Ritz by email el.ritz@yahoo.com or by phone. 5163309778.
+
+ Please provide your name, phone number, email address, and please state which classes or support groups you wish to attend.
+
+Currently all meetings are being held through Zoom. You will receive a link after your registration is confirmed with Ellen.</b></p>
+  </div>
+             </div>
+
+
+
+
+
+
+
+    </div>
+
+
+<!--<h2>Frequently Asked Questions (tap below for more info)</h2>-->
+{% for program in programs %}
+<button class="accordion">{{program.name}}</button>
+<div  align="left" class="panel">
+  <p>{{program.description}}</p>
+</div>
+{% endfor %}
+
+<!--<button class="accordion">How is mental illness treated?</button>-->
+<!--<div class="panel">-->
+<!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.(tap above to close)</p>-->
+
+<!--</div>-->
+
+<!--<button class="accordion">How can I provide support for a loved one struggling with mental illness?</button>-->
+<!--<div class="panel">-->
+<!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. (tap above to close)</p>-->
+
+<!--</div>-->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+
+
+{% endblock %}

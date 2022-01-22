@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'DjangoITC';
+    src: url("/static/django-itc-std.otf");
+}
+
+h1 {
+  font-family: DjangoITC, fantasy;
+}
+
+body {
+
+background-image: url( "{% static 'img/marble.jpg' %}");
+
+
+}

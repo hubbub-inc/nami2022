@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'DjangoITC';
+    src: url("/static/django-itc-std.otf");
+}
+
+h1 {
+  font-family: DjangoITC, fantasy;
+}
+
+body {
+
+background-image: url("/static/marble.jpg");
+
+
+}
+
+.grnpan {
+padding: 1em 2.2em;
+
+    background:#DAE9C5;
+    border: 1px solid black;
+    border-top: 0;
+    border-radius:8px;
+    width:93%;
+    height: 20%;
+    margin-left:10px;
+    }
