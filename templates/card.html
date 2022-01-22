@@ -1,28 +1,5 @@
-{% extends 'base.html' %}
-{% load static %}
-
-
-
-{% block nav %}
-
-
-{% include 'navbar.html' %}
-{% endblock %}
-
-
-{% block content %}
-
-<br/><br/>
-<body style="padding-top: 100px;">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!--   <link rel="stylesheet" type="text/css" href="{% static 'cal/css/styles.css' %}" />-->
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-
- <style>
-     body{
+<style>
+    body{
     background: #F4F7FD;
     margin-top:20px;
 }
@@ -333,98 +310,11 @@
 .widget-49 .widget-49-meeting-action a {
   text-transform: uppercase;
 }
-     /* Common styles */
-body {
-  font-family: "ptsans", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+</style>
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.btn {
-  outline: none;
-  color: black;
-  background-color: transparent;
-  box-shadow: 0 0 0 0;
-  margin-right: 3px;
-}
-
-.clearfix {
-  margin: 15px;
-}
-
-.form {
-  margin: auto;
-}
-
-.form input, .form select, .form textarea {
-  border-radius: 5px;
-  border: 1px solid #17a2b8;
-  outline: none;
-  background: none;
-  padding: 5px;
-  width: 100%;
-}
-
-/* App styles */
-.title {
-  text-align: center;
-  margin: 10px;
-}
-
-.calendar {
-  width: 70%;
-  margin: center;
-
-  font-size: 13px;
-}
-
-.calendar tr, .calendar td {
-  border: 1px solid black;
-}
-
-.calendar th {
-  padding: 10px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.calendar td {
-  width: 200px;
-  height: 150px;
-  margin: right;
-  padding: 20px 0px 0px 5px;
-}
-
-.month {
-  font-size: 25px;
-}
-
-.date {
-  font-size: 16px;
-}
-
-ul {
-  height: 100%;
-  padding: 0px 5px 0px 20px;
-}
-
-a {
-  color: #17a2b8;
-}
- </style>
-
-
-  <div style="margin:10px;" class="right"><div class="column">
-      {% for event in upcoming %}
-       <div class="card card-margin">
+        <div class="card card-margin">
             <div class="card-header no-border">
-                <h5 class="card-title">{{event.title}}</h5>
+                <h5 class="card-title">MOM</h5>
             </div>
             <div class="card-body pt-0">
                 <div class="widget-49">
@@ -438,38 +328,14 @@ a {
                             <span class="widget-49-meeting-time">12:00 to 13.30 Hrs</span>
                         </div>
                     </div>
-                    
+                    <ol class="widget-49-meeting-points">
+                        <li class="widget-49-meeting-item"><span>Expand module is removed</span></li>
+                        <li class="widget-49-meeting-item"><span>Data migration is in scope</span></li>
+                        <li class="widget-49-meeting-item"><span>Session timeout increase to 30 minutes</span></li>
+                    </ol>
+                    <div class="widget-49-meeting-action">
+                        <a href="#" class="btn btn-sm btn-flash-border-primary">View All</a>
+                    </div>
                 </div>
             </div>
         </div>
-      {% endfor %}
-
-<!--      <div class="row"><p>kldfs</p></div>-->
-<!--      <div class="row"><p>kldfs</p></div>-->
-<!--      <div class="row"><p>kldfs</p></div>-->
-<!--      <div class="row"><p>kldfs</p></div>-->
-  </div></div>
-
-{{calendar}}
-
-
-
-
-
-
-
-<!-- <div class="clearfix">-->
-<!--     <br/><br/>-->
-<!--	<a class="btn btn-info left" href="{% url 'events:events' %}?{{ prev_month }}"> Previous Month </a>-->
-<!--	<a class="btn btn-info right" href="{% url 'events:events' %}?{{ next_month }}"> Next Month </a>-->
-<!--	</div>-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
-
-
-{% endblock %}
