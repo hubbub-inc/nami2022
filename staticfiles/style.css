@@ -1,9 +1,7 @@
 
 
 body {
-
-background-image: url("/static/marble.jpg");
-
+ background-image: url("../static/marble.jpg");
 
 }
 
