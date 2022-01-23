@@ -22,6 +22,58 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
  <style>
+
+ .dropbtn {
+  background-color: #f9f9f9;
+  color: #0f0f0f;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 98;
+  max-height: 0;
+  min-width: 160px;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e2e2e2;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+  min-width: 160px;
+  transition: max-height 0.25s ease-in;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  transition: max-height 0.25s ease-in;
+}
+
  <style>
     h1 {
 
@@ -454,7 +506,13 @@ a {
  </style>
 
 
+<!--    <div id="box">-->
+<!--        {% for item in object_list %}-->
+<!--            <b>{{item}}<b><br>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
   <div  class="left" style="padding:5px;"><div class="column">
+
 
        <div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
 
@@ -465,8 +523,20 @@ a {
             <div class="headerbox"> <p class="title">    <h2>Upcoming events</h2>
 
 
+
   </div>
            <br/>
+           <div class="dropdown">
+  <button class="dropbtn" for="btnControl">Select an event</button>
+  <div class="dropdown-content">
+      {% for choice in choices %}
+      <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}}</a>
+ {% endfor %}
+  </div>
+</div>
+
+           <div id="box">
+                <br/>
       {% for event in upcoming %}
        <div class="card card-margin">
             <div class="card-header no-border">
@@ -489,6 +559,7 @@ a {
             </div>
         </div>
       {% endfor %}
+               </div>
       </div>
 
 <!--      <div class="row"><p>kldfs</p></div>-->
@@ -503,19 +574,11 @@ a {
 
 
 
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-
-<!-- <div class="clearfix">-->
-<!--     <br/><br/>-->
-<!--	<a class="btn btn-info left" href="{% url 'events:events' %}?{{ prev_month }}"> Previous Month </a>-->
-<!--	<a class="btn btn-info right" href="{% url 'events:events' %}?{{ next_month }}"> Next Month </a>-->
-<!--	</div>-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 

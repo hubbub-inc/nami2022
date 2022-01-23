@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('events/', include('events.urls', namespace='events')),
+    path('test/', TemplateView.as_view(template_name="main.html")),
     path('', include('programs.urls', namespace='urls')),
+
 
 ]
