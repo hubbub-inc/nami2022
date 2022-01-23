@@ -9,6 +9,9 @@ class Meeting(models.Model):
     end_time = models.DateTimeField()
     program = models.ForeignKey(Program, default=1, on_delete=models.CASCADE)
 
+    class Meta:
+        ordering = ('start_time',)
+
     @property
     def get_color(self):
         switcher = {0: "pink", 1: "red", 2: "yellow"}
