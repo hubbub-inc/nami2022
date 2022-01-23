@@ -42,7 +42,7 @@ class CalendarView(generic.ListView):
         meetinglist = [
             {'title': meeting.program.name, 'instructions': meeting.program.instructions, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
              'month': meeting.start_time.strftime("%B"), 'color': meeting.get_color} for meeting in upcoming]
-        meetinglist.reverse()
+        # meetinglist.reverse()
         context['upcoming'] = meetinglist
         return context
 
