@@ -11,15 +11,18 @@
 
 
 {% block content %}
+<html>
 
-<br/><br/>
-<body style="padding-top: 100px;">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--<br/><br/>-->
+
+<!--  <meta charset="utf-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 
 <!--   <link rel="stylesheet" type="text/css" href="{% static 'cal/css/styles.css' %}" />-->
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+
 
  <style>
 
@@ -432,18 +435,18 @@ body {
   margin: 15px;
 }
 
-.form {
-  margin: auto;
-}
+<!--.form {-->
+<!--  margin: auto;-->
+<!--}-->
 
-.form input, .form select, .form textarea {
-  border-radius: 5px;
-  border: 1px solid #17a2b8;
-  outline: none;
-  background: none;
-  padding: 5px;
-  width: 100%;
-}
+<!--.form input, .form select, .form textarea {-->
+<!--  border-radius: 5px;-->
+<!--  border: 1px solid #17a2b8;-->
+<!--  outline: none;-->
+<!--  background: none;-->
+<!--  padding: 5px;-->
+<!--  width: 100%;-->
+<!--}-->
 
 /* App styles */
 .title {
@@ -504,13 +507,12 @@ a {
     margin-left:10px;
     }
  </style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  </head>
 
-<!--    <div id="box">-->
-<!--        {% for item in object_list %}-->
-<!--            <b>{{item}}<b><br>-->
-<!--        {% endfor %}-->
-<!--    </div>-->
+<body style="padding-top: 100px;">
   <div  class="left" style="padding:5px;"><div class="column">
 
 
@@ -526,8 +528,10 @@ a {
 
   </div>
            <br/>
+
+
            <div class="dropdown">
-  <button class="dropbtn" for="btnControl">Select an event</button>
+  <button class="dropbtn" for="btnControl"><span class="glyphicon glyphicon-list"></span> Select an event</button>
   <div class="dropdown-content">
       {% for choice in choices %}
       <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}}</a>
@@ -580,6 +584,6 @@ a {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
-
+</html>
 
 {% endblock %}
