@@ -1,4 +1,5 @@
 
+
                   {% for program in programs %}
 
     <div style="background-color:#DAE9C5;" class="col-md-12 col-lg-10 mx-auto mb-3">
@@ -7,14 +8,15 @@
     <div class="card border-top border-bottom-0 border-left border-right border-light">
       <div class="card-header border-bottom border-light" role="tab" id="heading" style="background-color:#DAE9C5;">
         <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse" aria-expanded="true" aria-controls="collapse">
-          <h5 class="black-text font-weight-normal mb-0">
+          <h3 style="font-size:2.5em;" class="black-text">
             {{ program.name }}
-          </h5>
+          </h3>
         </a>
       </div>
 <!--      <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionEx">-->
         <div class="card-body">
-          {{ program.description }}
+        <p style="font-size:1em;"> {{ program.description }}</p>
+
         </div>
 <!--      </div>-->
     </div>

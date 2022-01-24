@@ -153,15 +153,15 @@
   justify-content: center;
   flex-direction: column;
   background-color: #edf1fc;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day {
   color: #4e73e5;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -330,7 +330,7 @@
   background-color: #ebedee;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 
 .widget-49 .widget-49-title-wrapper .widget-49-date-dark .widget-49-date-day {
@@ -522,7 +522,7 @@ a {
 
 
 
-            <div class="headerbox"> <p class="title">    <h2>Upcoming events</h2>
+            <div class="headerbox"> <p class="title">    <h2 style=font-size:3em;">Upcoming events</h2>
 
 
 
@@ -544,17 +544,17 @@ a {
       {% for event in upcoming %}
        <div class="card card-margin">
             <div class="card-header no-border">
-                <h5 class="card-title">{{event.title}}</h5>
+                <h5 style="font-size:1.5em;" class="card-title">{{event.title}}</h5>
             </div>
             <div class="card-body pt-0">
                 <div class="widget-49">
                     <div class="widget-49-title-wrapper">
                         <div class="widget-49-date-primary">
-                            <span class="widget-49-date-day">{{event.day}}</span>
-                            <span class="widget-49-date-month">{{event.month}}</span>
+                            <span  class="widget-49-date-day">{{event.day}}</span>
+                            <span  class="widget-49-date-month">{{event.month}}</span>
                         </div>
                         <div class="widget-49-meeting-info">
-                            <span class="widget-49-pro-title">{{event.instructions}}</span>
+                            <span class="widget-49-pro-title"><p>{{event.instructions}}</p></span>
                             <span class="widget-49-meeting-time"></span>
                         </div>
                     </div>
