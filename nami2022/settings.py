@@ -18,7 +18,7 @@ import django_heroku
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-X_FRAME_OPTIONS = 'ALLOW-FROM https://www.nami-huntington.org/'
+X_FRAME_OPTIONS = 'ALLOWALL'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
