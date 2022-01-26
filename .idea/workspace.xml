@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a1884bc7-13f6-4ae9-adc7-dc96dfd17143" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/events/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nami2022/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nami2022/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/programs/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

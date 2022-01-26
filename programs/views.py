@@ -3,6 +3,8 @@ from .models import Program
 from events.models import Meeting
 from django.shortcuts import render
 import datetime
+from django.views.decorators.clickjacking import xframe_options_exempt
+
 
 
 def landing(request):
