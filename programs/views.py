@@ -45,7 +45,7 @@ def supportList(request):
     print('GETTING SUPPORT')
     groups = [i for i in Program.objects.all()]
     title = "Support Groups"
-    subtitle = "Whether you've been affected directly or indirectly by mental illness,  your healing begins when you are able to acknowledge and  to share what you've been through. Support groups offer an opportunity to tell your story, learn from others, and give and receive loving encouragement from others at different stages in the recovery process."
+    subtitle = "By sharing your experiences in a safe and confidential setting, you can gain hope and feel a sense of connection. Support groups encourages empathy, productive discussion and a sense of community. You'll benefit from other's experiences, discover your inner strength and empower yourself by sharing your own experiences in a non-judgmental space."
 
     groups = [i for i in groups if i.isSupportGroup() == True]
     print(len(groups))
