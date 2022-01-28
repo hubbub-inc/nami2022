@@ -28,5 +28,7 @@ class Meeting(models.Model):
 
     def __str__(self):
         time = self.start_time.strftime("%m/%d/%Y")
-        return time
+        name = self.program.name
+        entry = name + " " + time
+        return entry
 
