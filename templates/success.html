@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block nav %}
+
+
+{% include 'navbar.html' %}
+{% endblock %}
+
+
+{% block content %}
+<body>
+ <div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
+
+<!--                   <h2 style="color:red; ">{{title}}</h2>-->
+<!--        <strong><p style="color:red;">{{subtitle}}</p></strong>-->
+  <div class="column">
+      <span class="glyphicon glyphicon-list"></span>
+    <div style="outline: red solid 10px;" class="card">
+
+      <div class="container">
+        <h2 style="font-size:3em;"><b>Request received!</b></h2>
+
+        <p style="font-size:1em;">Thank you for registering for {{program}}. You will hear from us shortly!</p>
+
+
+      </div></div></div></div>
+</body>
+
+{% endblock %}

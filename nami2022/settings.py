@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 import dj_database_url
 import django_heroku
+from dotenv import load_dotenv
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -24,7 +26,8 @@ X_FRAME_OPTIONS = 'ALLOWALL'
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ye8yaea*s0gmg)!(s0^opnde@7-r7qxnj342bp&8+akp!c5o)4'
+
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
     'programs',
     'people',
     'events',
+    'registration',
 
 ]
 
@@ -138,5 +142,15 @@ if DEBUG:
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'namiweb@yahoo.com'
+SERVER_EMAIL = 'namiweb@yahoo.com'
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_HOST_USER = 'namiweb@yahoo.com'
+EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
 
 django_heroku.settings(locals())
