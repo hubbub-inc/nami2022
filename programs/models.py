@@ -8,9 +8,11 @@ CMT = 'Committees'
 FTH = 'FaithNet'
 FTF = 'Family-to-Family'
 FND = 'Fundraising'
+FML = 'Family Meeting'
 IOOV = 'In Our Own Voice'
 P2P = 'Peer-to-Peer'
 PSG = 'Peer Support Group'
+PSG2 = 'Peer Support Group2'
 WLK = 'WALK'
 SPRT = 'Spirituality'
 UNITES = 'UTS'
@@ -23,10 +25,12 @@ PROGRAM_CHOICES = [
     (FTH, 'FaithNet'),
     (FTF, 'Family-to-Family'),
     (FND, 'Fundraising'),
+    (FML, 'Family Meeting'),
     (IOOV, 'In our Own Voice'),
     (SPRT, 'Support Groups'),
     (P2P, 'Peer-to-Peer'),
     (PSG, 'Peer Support Group'),
+    (PSG2, 'Peer Support Group2'),
     (WLK , 'WALK'),
     (LGN, 'Legislative Night'),
     (WFS, 'Whole Family Support'),
