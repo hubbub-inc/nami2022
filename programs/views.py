@@ -47,6 +47,7 @@ def supportList(request):
     title = "Support Groups"
     subtitle = "By sharing your experiences in a safe and confidential setting, you can gain hope and feel a sense of connection. Support groups encourages empathy, productive discussion and a sense of community. You'll benefit from other's experiences, discover your inner strength and empower yourself by sharing your own experiences in a non-judgmental space."
 
+
     groups = [i for i in groups if i.isSupportGroup() == True]
     print(len(groups))
     context = {}
