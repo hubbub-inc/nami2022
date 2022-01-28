@@ -23,7 +23,6 @@
 
 
 
-
  <style>
 
  .dropbtn {
@@ -509,6 +508,7 @@ a {
  </style>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
 
@@ -517,6 +517,7 @@ a {
 
 
        <div class="jumbotron" style="opacity: 0.8;background-color:Tan;">
+
 
 
 
@@ -531,7 +532,7 @@ a {
 
 
            <div class="dropdown">
-  <button class="dropbtn" for="btnControl"><span class="glyphicon glyphicon-list"></span> Select an event</button>
+  <button class="dropbtn" for="btnControl"><span class="glyphicon glyphicon-list"></span> <i class="fa fa-bars"></i>  &nbsp Select an event</button>
   <div class="dropdown-content">
       {% for choice in choices %}
       <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}}</a>
