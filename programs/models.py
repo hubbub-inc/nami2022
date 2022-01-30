@@ -18,6 +18,9 @@ SPRT = 'Spirituality'
 UNITES = 'UTS'
 LGN = 'Legislative Night'
 WFS = 'Whole Family Support'
+PRT = 'Partner/Spouse Support'
+SBL = 'Sibling Support'
+TNS = 'Teen Support'
 
 PROGRAM_CHOICES = [
     (CARE, 'Caring and Sharing Meetings'),
@@ -27,15 +30,17 @@ PROGRAM_CHOICES = [
     (FND, 'Fundraising'),
     (FML, 'Family Meeting'),
     (IOOV, 'In our Own Voice'),
-    (SPRT, 'Support Groups'),
+    (SPRT, 'Spirituality'),
     (P2P, 'Peer-to-Peer'),
     (PSG, 'Peer Support Group'),
     (PSG2, 'Peer Support Group2'),
     (WLK , 'WALK'),
     (LGN, 'Legislative Night'),
     (WFS, 'Whole Family Support'),
-
-]
+    (PRT, 'Partner/Spouse Support'),
+    (SBL, 'Sibling Support'),
+    (TNS, 'Teen Support'),
+    ]
 
 
 class Program(models.Model):
