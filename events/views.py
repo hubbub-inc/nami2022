@@ -62,7 +62,7 @@ class CalendarView(generic.ListView):
 
         meetinglist = [
             {'title': meeting.program.name, 'instructions': meeting.program.instructions, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
-             'month': meeting.start_time.strftime("%B"), 'color': meeting.get_color} for meeting in upcoming]
+             'month': meeting.start_time.strftime("%B"), 'time': meeting.start_time.strftime("%I:%M %p"), 'color': meeting.get_color} for meeting in upcoming]
         # meetinglist.reverse()
         context['upcoming'] = meetinglist
         jsonString = json.dumps(meetinglist)
@@ -141,7 +141,7 @@ class filterEvents(generic.ListView):
 
         meetinglist = [
             {'title': meeting.program.name, 'instructions': meeting.program.instructions, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
-             'month': meeting.start_time.strftime("%B"), 'color': meeting.get_color} for meeting in upcoming if meeting.program.pk==self.kwargs['prg']]
+             'month': meeting.start_time.strftime("%B"), 'time': meeting.start_time.strftime("%I:%M %p"), 'color': meeting.get_color} for meeting in upcoming if meeting.program.pk==self.kwargs['prg']]
         # meetinglist.reverse()
         context['upcoming'] = meetinglist
         jsonString = json.dumps(meetinglist)

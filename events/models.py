@@ -12,6 +12,8 @@ class Meeting(models.Model):
     class Meta:
         ordering = ('start_time',)
 
+
+
     @property
     def get_color(self):
         switcher = {0: "pink", 1: "red", 2: "yellow"}
