@@ -520,7 +520,7 @@ a {
 
 
            <div class="dropdown">
-  <button class="dropbtn" for="btnControl"><span class="glyphicon glyphicon-list"></span> <i class="fa fa-bars"></i>  &nbsp Select an event</button>
+  <button class="dropbtn" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" for="btnControl"><span class="glyphicon glyphicon-list"></span>Click/tap here for speciality programs</button>
   <div class="dropdown-content">
       {% for choice in choices %}
       <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}}</a>
