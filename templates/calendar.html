@@ -160,7 +160,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day {
   color: #4e73e5;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1;
 }
 
@@ -217,7 +217,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-success .widget-49-date-month {
   color: #17d1bd;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
@@ -242,7 +242,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-info .widget-49-date-month {
   color: #36afff;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -267,7 +267,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-warning .widget-49-date-month {
   color: #FFC868;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -292,7 +292,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-danger .widget-49-date-month {
   color: #F95062;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -342,7 +342,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-dark .widget-49-date-month {
   color: #394856;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -367,7 +367,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-month {
   color: #68CBD7;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -539,13 +539,14 @@ a {
                 <div class="widget-49">
                     <div class="widget-49-title-wrapper">
                         <div class="widget-49-date-primary">
-                            <span  class="widget-49-date-day">{{event.day}}</span>
                             <span  class="widget-49-date-month">{{event.month}}</span>
-                            <span  class="widget-49-date-month">{{event.time}}</span>
+                            <span  class="widget-49-date-day">{{event.day}}</span>
+
+                            <span  style="font-size:1em;" class="widget-49-date-month">{{event.time}}</span>
                         </div>
                         <div class="widget-49-meeting-info">
 
-                                <p style="font-size: 1em;">{{event.instructions}}</p>
+                                <p style="font-size: 1.5em;">{{event.instructions}}</p>
 
 
                             <span class="widget-49-meeting-time"></span>
