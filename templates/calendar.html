@@ -160,7 +160,7 @@
 .widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day {
   color: #4e73e5;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
@@ -532,26 +532,26 @@ a {
                 <br/>
       {% for event in upcoming %}
        <div style="border: 1px solid red;" class="card card-margin">
-            <div class="card-header no-border">
-                <h5 style="font-size:1.5em;" class="card-title">{{event.title}}</h5>
-            </div>
+
             <div class="card-body pt-0">
                 <div class="widget-49">
                     <div class="widget-49-title-wrapper">
                         <div class="widget-49-date-primary">
-                            <span  class="widget-49-date-month">{{event.month}}</span>
+                            <span class="widget-49-date-month">{{event.month}}</span>
                             <span  class="widget-49-date-day">{{event.day}}</span>
 
                             <span  style="font-size:1em;" class="widget-49-date-month">{{event.time}}</span>
                         </div>
                         <div class="widget-49-meeting-info">
+                                        <h5 style="font-size:2em;" class="card-title">{{event.title}}</h5>
 
-                                <p style="font-size: 1.5em;">{{event.instructions}}</p>
 
 
                             <span class="widget-49-meeting-time"></span>
                         </div>
+
                     </div>
+                    <p style="font-size: 1.5em;">{{event.instructions}}</p>
                     
                 </div>
             </div>
