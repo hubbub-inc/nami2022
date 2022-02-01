@@ -1,49 +1,124 @@
 
 {% load static %}
+    <style>
+body {
+  background-color: rgb(241, 250, 217);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-<nav  style="background-color: #F6F5D7;" class="navbar navbar-expand-md fixed-top bg-dark">
+  * {
+    box-sizing: border-box;
+  }
 
-    <button style="width:5em;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="overflow-y: visible;overflow-x:visible;"  class="navbar-toggler-icon"> </span><p style="font-size:1.5em;color:red;">MENU<i class="fa fa-bars"></i>    </p>
+  .bg-image {
+    /* The image used */
+    background-image: url("navbar\bg.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+<!--<nav  style="background-color: #F6F5D7;" class="navbar navbar-expand-md fixed-top bg-dark">-->
+
+<!--    <button style="width:5em;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"-->
+<!--            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span style="overflow-y: visible;overflow-x:visible;"  class="navbar-toggler-icon"> </span><p style="font-size:1.5em;color:red;">MENU<i class="fa fa-bars"></i>    </p>-->
 
 
 
-    </button>
-<!--<img width="30%" height="141px" src="https://bloximages.chicago2.vip.townnews.com/mtexpress.com/content/tncms/assets/v3/editorial/a/91/a91e0496-c212-11ea-b14a-eb7477c88632/5f076306395d3.image.jpg?resize=400%2C211"/>-->
+<!--    </button>-->
+<!--&lt;!&ndash;<img width="30%" height="141px" src="https://bloximages.chicago2.vip.townnews.com/mtexpress.com/content/tncms/assets/v3/editorial/a/91/a91e0496-c212-11ea-b14a-eb7477c88632/5f076306395d3.image.jpg?resize=400%2C211"/>&ndash;&gt;-->
 
-<!--    <div  class="collapse navbar-collapse" id="navbarsExampleDefault">-->
-        <div  class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-<!--            <li class="nav-item active">-->
+<!--&lt;!&ndash;    <div  class="collapse navbar-collapse" id="navbarsExampleDefault">&ndash;&gt;-->
+<!--        <div  class="collapse navbar-collapse" id="navbarsExampleDefault">-->
+<!--        <ul class="navbar-nav mr-auto">-->
+<!--&lt;!&ndash;            <li class="nav-item active">&ndash;&gt;-->
 
-<!--             <a class="nav-link" href="/">-->
-<!--                 NAMI-->
+<!--&lt;!&ndash;             <a class="nav-link" href="/">&ndash;&gt;-->
+<!--&lt;!&ndash;                 NAMI&ndash;&gt;-->
 
-<!--                 <a>-->
+<!--&lt;!&ndash;                 <a>&ndash;&gt;-->
+<!--&lt;!&ndash;             </li>&ndash;&gt;-->
+<!--                 <li style="padding: 5px 40px;" class="nav-item active">-->
+<!--             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/">&nbsp<i class="fa fa-home"></i> Home</a><-->
 <!--             </li>-->
-                 <li style="padding: 5px 40px;" class="nav-item active">
-             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/">&nbsp<i class="fa fa-home"></i> Home</a><
+
+<!--             <li style="padding: 5px 40px;" class="nav-item active">-->
+<!--             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/events">&nbsp<i class="fa fa-calendar"></i> Calendar</a>-->
+<!--             </li>-->
+<!--             <li style="padding: 10px 40px;" class="nav-item active">-->
+<!--             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/support">&nbsp<i class="fa fa-users"></i> Support</a>-->
+
+<!--             </li>-->
+<!--             <li style="padding: 10px 40px;"  class="nav-item active">-->
+<!--             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/classes">&nbsp<i class="fa fa-graduation-cap"></i> Classes</a>-->
+<!--             </li>-->
+<!--&lt;!&ndash;             <li style="padding: 20px 40px;"  class="nav-item active">&ndash;&gt;-->
+<!--&lt;!&ndash;             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/classes">&nbsp<i class="fa fa-paper-plane"></i>&nbsp Register</a>&ndash;&gt;-->
+<!--&lt;!&ndash;             </li>&ndash;&gt;-->
+
+
+
+
+<!--            </ul>-->
+
+<!--    </div>-->
+<!--</nav>-->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+<!--        <a class="navbar-brand" href="https://www.djangoproject.com/" target="_blank">-->
+<!--            <img src="{% static 'navbar/dd.png' %}" width="50" height="50" alt="">-->
+<!--        </a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>MENU
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+                                      <li style="padding: 5px 40px;" class="nav-item active">
+             <a class="nav-link" style="font-size:30px;color:red;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/">&nbsp<i class="fa fa-home"></i> Home</a><
              </li>
 
              <li style="padding: 5px 40px;" class="nav-item active">
-             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/events">&nbsp<i class="fa fa-calendar"></i> Calendar</a>
+             <a class="nav-link" style="font-size:30px;color:red;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/events">&nbsp<i class="fa fa-calendar"></i> Calendar</a>
              </li>
              <li style="padding: 10px 40px;" class="nav-item active">
-             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/support">&nbsp<i class="fa fa-users"></i> Support</a>
+             <a class="nav-link" style="font-size:30px;color:red;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/support">&nbsp<i class="fa fa-users"></i> Support</a>
 
              </li>
              <li style="padding: 10px 40px;"  class="nav-item active">
-             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/classes">&nbsp<i class="fa fa-graduation-cap"></i> Classes</a>
+             <a class="nav-link" style="font-size:30px;color:red;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/classes">&nbsp<i class="fa fa-graduation-cap"></i> Classes</a>
              </li>
-<!--             <li style="padding: 20px 40px;"  class="nav-item active">-->
-<!--             <a class="nav-link" style="font-size:30px;background-color:LightGray;outline: #4CAF50 solid 10px;" href="/classes">&nbsp<i class="fa fa-paper-plane"></i>&nbsp Register</a>-->
-<!--             </li>-->
-
-
-
-
-            </ul>
-
-    </div>
-</nav>
+            </div></div></div></nav>
