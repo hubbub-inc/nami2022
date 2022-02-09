@@ -15,9 +15,23 @@ import io
 THIS_DIR = os.path.dirname(__file__)
 filedir = THIS_DIR + '/guidelines.docx'
 pdfdir = THIS_DIR + '/schizo.pdf'
+supportdir = THIS_DIR + '/support.pdf'
+lossdir = THIS_DIR + '/loss.pdf'
 
 def pdf_view(request):
     with open(pdfdir, 'rb') as pdf:
+        response = HttpResponse(pdf.read(),content_type='application/pdf')
+        response['Content-Disposition'] = 'filename=some_file.pdf'
+        return response
+
+def loss_view(request):
+    with open(lossdir, 'rb') as pdf:
+        response = HttpResponse(pdf.read(),content_type='application/pdf')
+        response['Content-Disposition'] = 'filename=some_file.pdf'
+        return response
+
+def support_view(request):
+    with open(supportdir, 'rb') as pdf:
         response = HttpResponse(pdf.read(),content_type='application/pdf')
         response['Content-Disposition'] = 'filename=some_file.pdf'
         return response
