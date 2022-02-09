@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1884bc7-13f6-4ae9-adc7-dc96dfd17143" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/greenList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/greenList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nami2022/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nami2022/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nami2022/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nami2022/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/basey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/icon_test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

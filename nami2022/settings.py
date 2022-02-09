@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
+    'rest_framework',
     'programs',
     'people',
     'events',
     'registration',
+    'documents',
 
 ]
 
