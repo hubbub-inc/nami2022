@@ -38,6 +38,7 @@
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+          weekends: false,
           timeZone: 'UTC',
           events: newArr,
             height: 1000,
