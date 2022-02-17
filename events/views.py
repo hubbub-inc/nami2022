@@ -8,7 +8,7 @@ from django.utils.safestring import mark_safe
 from django.core import serializers
 import calendar
 import datetime
-
+import json
 from .models import *
 from .utils import Calendar
 from programs.models import PROGRAM_CHOICES, Program
@@ -27,6 +27,14 @@ class ProgramForm(forms.ModelForm):
         model = Meeting
         fields = ('program',)
 
+def cal_view(request):
+    meetings = [i for i in Meeting.objects.all()]
+    meetinglist = [{'title': i.program.name, 'time': i.start_time.strftime("%Y-%m-%d")} for i in meetings]
+    asJson = json.dumps(meetinglist)
+    context = {}
+    context['myevents'] = asJson
+    template = "cal.html"
+    return render(request, template, context)
 
 
 class CalendarView(generic.ListView):
