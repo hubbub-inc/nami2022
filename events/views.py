@@ -29,8 +29,9 @@ class ProgramForm(forms.ModelForm):
 
 def cal_view(request):
     meetings = [i for i in Meeting.objects.all()]
-    meetinglist = [{'title': i.program.name, 'time': i.start_time.strftime("%Y-%m-%d")} for i in meetings]
+    meetinglist = [{'title': i.program.name,  'instructions': i.program.instructions,  'time': i.start_time.strftime("%I:%M %p"), 'date': i.start_time.strftime("%Y-%m-%d")} for i in meetings]
     asJson = json.dumps(meetinglist)
+    print(meetinglist)
     context = {}
     context['myevents'] = asJson
     template = "cal.html"

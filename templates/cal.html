@@ -24,7 +24,12 @@
   return {
        id: 'a',
       title: num.title,
-      start: num.time};
+      start: num.date,
+      extendedProps: {
+        department: num.instructions,
+        time: num.time,
+      },
+      };
       };
 
       const newArr = moreevents.map(myFunction);
@@ -47,7 +52,9 @@
 
 
           eventClick: function(info) {
-    alert('Event: ');
+          console.log(info.event.extendedProps.department);
+    alert('Event: ' + info.event.title + " " + info.event.extendedProps.time);
+
 
     info.el.style.borderColor = 'red';
   },
