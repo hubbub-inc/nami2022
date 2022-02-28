@@ -19,10 +19,12 @@ class Meeting(models.Model):
         name = self.program.name
         if (name=="Peer-to-Peer") or (name=="Peer Support Group"):
             return "blue"
-        if (name=="Family-to-Family") or (name=="Whole Family Support"):
+        if (name=="Family-to-Family") or (name=="Whole Family Support") or (name=="Sibling Support") or (name=="Partner/Spouse Support"):
             return "green"
-        else:
+        if (name=="FaithNet") or (name=="Spirituality"):
             return "pink"
+        else:
+            return "red"
 
     @property
     def get_html_url(self):
