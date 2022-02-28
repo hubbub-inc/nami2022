@@ -16,9 +16,13 @@ class Meeting(models.Model):
 
     @property
     def get_color(self):
-        switcher = {0: "pink", 1: "red", 2: "yellow"}
-        color = switcher.get(self.program.pk, "orange")
-        return color
+        name = self.program.name
+        if (name=="Peer-to-Peer") or (name=="Peer Support Group"):
+            return "blue"
+        if (name=="Family-to-Family") or (name=="Whole Family Support"):
+            return "green"
+        else:
+            return "pink"
 
     @property
     def get_html_url(self):

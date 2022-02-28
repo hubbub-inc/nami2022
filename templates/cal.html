@@ -23,11 +23,15 @@
       function myFunction(num) {
   return {
        id: 'a',
+
       title: num.title,
       start: num.date,
+      backgroundColor: num.color,
       extendedProps: {
         department: num.instructions,
         time: num.time,
+
+
       },
       };
       };
@@ -40,9 +44,10 @@
 
 
 
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function(info) {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+
           weekends: false,
           timeZone: 'UTC',
           events: newArr,
@@ -51,13 +56,13 @@
           initialView: 'dayGridMonth',
 
 
-          eventClick: function(info) {
-          console.log(info.event.extendedProps.department);
-    alert('Event: ' + info.event.title + " " + info.event.extendedProps.time);
+<!--          eventClick: function(info) {-->
+<!--          console.log(info.event.extendedProps.department);-->
+<!--    alert('Event: ' + info.event.title + " " + info.event.extendedProps.time);-->
 
 
-    info.el.style.borderColor = 'red';
-  },
+<!--    info.el.style.borderColor = 'green';-->
+<!--  },-->
 
         });
 
