@@ -58,6 +58,20 @@ def supportList(request):
     return render(request, template, context)
 
 
+def specialEvents(request):
+    print('GETTING SPECIAL')
+
+    title = "Special Events"
+    subtitle = "Each month NAMI sponsors special presentations providing in-depth discussions on specific topics in mental health. NAMI also holds monthly business meetings where members come together for support and to organize"
+
+
+    template = 'specialEvents.html'
+    context = {}
+    context['title'] = title
+    context['subtitle'] = subtitle
+    return render(request, template, context)
+
+
 def programDetail(request, pk=None):
     program = Program.objects.get(pk=pk)
     context = {}

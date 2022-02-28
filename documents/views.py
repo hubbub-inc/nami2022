@@ -13,7 +13,7 @@ import io
 
 
 THIS_DIR = os.path.dirname(__file__)
-filedir = THIS_DIR + '/guidelines.docx'
+filedir = THIS_DIR + '/special8.docx'
 pdfdir = THIS_DIR + '/schizo.pdf'
 supportdir = THIS_DIR + '/support.pdf'
 lossdir = THIS_DIR + '/loss.pdf'
@@ -40,11 +40,32 @@ def support_view(request):
 
 
 def documents_home(request):
+    custom_css = """
+        <style>
+        .sectionHeading {
+    
+            font-size: 75px;
+        }
+        
+        .sectionContent {
+                font-size: 30px;
+                }
+                
+        .underline{
+            text-decoration: underline;
+        }
+       
+        </style>
+        """
     print(THIS_DIR)
+    custom_styles = """ b => h2.sectionHeading
+                        i => p.sectionContent
+                        
+                        p[style-name='Heading 1'] => h1.red.underline"""
     with open(filedir, "rb") as docx_file:
-        result = mammoth.convert_to_html(docx_file)
-        text = result.value
-        text += "<style>p { font-size: 50px; }li { font-size: 30px; }</style>"
+        result = mammoth.convert_to_html(docx_file, style_map=custom_styles)
+        text = custom_css + result.value
+
 
     context = {}
     context['docx'] = f"{text}"
