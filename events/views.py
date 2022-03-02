@@ -80,6 +80,7 @@ class CalendarView(generic.ListView):
         choices = [i for i in Program.objects.all()]
         context['choices'] = choices
         print(choices)
+        print('calendar view')
 
         return context
 

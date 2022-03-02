@@ -152,8 +152,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: #edf1fc;
-  width: 5rem;
-  height: 5rem;
+  width: 7.5rem;
+  height: 6rem;
   border-radius: 50%;
 }
 
@@ -525,7 +525,7 @@ a {
 
   <div class="dropdown-content">
       {% for choice in choices %}
-      <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}}</a>
+      <a href="{% url 'events:filtered' prg=choice.pk %}">{{choice.name}} </a>
  {% endfor %}
   </div>
 </div>
@@ -533,16 +533,16 @@ a {
            <div id="box">
                 <br/>
       {% for event in upcoming %}
-       <div style="border: 1px solid red;" class="card card-margin">
+       <div style="border: 1px solid red;background-color: {{event.color}};color: yellow" class="card card-margin">
 
             <div class="card-body pt-0">
                 <div class="widget-49">
                     <div class="widget-49-title-wrapper">
                         <div class="widget-49-date-primary">
-                            <span class="widget-49-date-month">{{event.month}}</span>
-                            <span  class="widget-49-date-day">{{event.day}}</span>
+                            <span style="color: black;" class="widget-49-date-month">{{event.month}}</span>
+                            <span style="color: black;" class="widget-49-date-day">{{event.day}}</span>
 
-                            <span  style="font-size:1em;" class="widget-49-date-month">{{event.time}}</span>
+                            <span  style="font-size:1em;color: black;" class="widget-49-date-month">{{event.time}}</span>
                         </div>
                         <div class="widget-49-meeting-info">
                                         <h5 style="font-size:2em;" class="card-title">{{event.title}}</h5>
