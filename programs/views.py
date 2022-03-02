@@ -4,6 +4,12 @@ from events.models import Meeting
 from django.shortcuts import render
 import datetime
 from django.views.decorators.clickjacking import xframe_options_exempt
+import io
+import mammoth
+import os
+
+THIS_DIR = os.path.dirname(__file__)
+filedir = THIS_DIR + '/specialevent.docx'
 
 
 
@@ -59,7 +65,33 @@ def supportList(request):
 
 
 def specialEvents(request):
-    print('GETTING SPECIAL')
+    custom_css = """
+           <style>
+           .sectionHeading {
+
+               font-size: 40px;
+           }
+
+           .sectionContent {
+                   font-size: 30px;
+                   }
+            .subInfo {
+                font-size: 15px;
+                }
+     
+
+           </style>
+           """
+
+    custom_styles = """ b => h3.sectionHeading
+                           i => p.sectionContent
+                           u => p.subInfo
+
+                           p[style-name='Heading 1'] => h1.red.underline"""
+    with open(filedir, "rb") as docx_file:
+        result = mammoth.convert_to_html(docx_file, style_map=custom_styles)
+        text = custom_css + result.value
+
 
     title = "Special Events"
     subtitle = "Each month NAMI sponsors special presentations providing in-depth discussions on specific topics in mental health. NAMI also holds monthly business meetings where members come together for support and to organize activities."
@@ -69,6 +101,7 @@ def specialEvents(request):
     context = {}
     context['title'] = title
     context['subtitle'] = subtitle
+    context['docx'] = f"{text}"
     return render(request, template, context)
 
 
