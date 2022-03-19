@@ -7,6 +7,7 @@ COD = 'COD'
 CMT = 'Committees'
 FTH = 'FaithNet'
 FTF = 'Family-to-Family'
+FSP = 'Family Support Group'
 FND = 'Fundraising'
 FML = 'Family Meeting'
 IOOV = 'In Our Own Voice'
@@ -27,6 +28,7 @@ PROGRAM_CHOICES = [
     (CMT, 'Committees'),
     (FTH, 'FaithNet'),
     (FTF, 'Family-to-Family'),
+    (FSP, 'Family Support Group'),
     (FND, 'Fundraising'),
     (FML, 'Family Meeting'),
     (IOOV, 'In our Own Voice'),
