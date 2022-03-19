@@ -64,7 +64,7 @@ class Program(models.Model):
             return False
 
     def isSupportGroup(self):
-        if ((self.name) == PSG) or ((self.name) == WFS) or ((self.name) == SBL) or ((self.name) == SPRT) or ((self.name) == PRT) or ((self.name) == TNS):
+        if ((self.name) == PSG) or ((self.name) == WFS) or ((self.name) == SBL) or ((self.name) == SPRT) or ((self.name) == PRT) or ((self.name) == TNS) or ((self.name) == FSP):
             return True
         else:
             return False

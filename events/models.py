@@ -22,7 +22,7 @@ class Meeting(models.Model):
         if (name=="Family-to-Family") or (name=="Whole Family Support") or (name=="Sibling Support") or (name=="Partner/Spouse Support"):
             return "green"
         if (name=="FaithNet") or (name=="Spirituality"):
-            return "pink"
+            return "purple"
         else:
             return "red"
 
