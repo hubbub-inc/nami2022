@@ -15,7 +15,7 @@ P2P = 'Peer-to-Peer'
 PSG = 'Peer Support Group'
 PSG2 = 'Peer Support Group2'
 WLK = 'WALK'
-SPRT = 'Spirituality'
+SPRT = 'Spirituality Group'
 UNITES = 'UTS'
 LGN = 'Legislative Night'
 WFS = 'Whole Family Support'
@@ -32,7 +32,7 @@ PROGRAM_CHOICES = [
     (FND, 'Fundraising'),
     (FML, 'Family Meeting'),
     (IOOV, 'In our Own Voice'),
-    (SPRT, 'Spirituality'),
+    (SPRT, 'Spirituality Group'),
     (P2P, 'Peer-to-Peer'),
     (PSG, 'Peer Support Group'),
     (PSG2, 'Peer Support Group2'),
