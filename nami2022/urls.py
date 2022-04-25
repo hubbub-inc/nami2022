@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from registration.views import home_view
 from documents.views import documents_home, pdf_view
-from programs.views import specialEvents
+
 
 
 urlpatterns = [
@@ -27,7 +27,6 @@ urlpatterns = [
     path('events/', include('events.urls', namespace='events')),
     path('test/', TemplateView.as_view(template_name="main.html")),
     path('register/', home_view),
-    path('special/', specialEvents),
     # path('documents/', include('documents.urls', namespace='documents')),
     path('', include('programs.urls', namespace='urls')),
 

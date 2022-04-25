@@ -7,6 +7,7 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 import io
 import mammoth
 import os
+from django.http import FileResponse
 
 THIS_DIR = os.path.dirname(__file__)
 filedir = THIS_DIR + '/specialevent.docx'
@@ -63,6 +64,10 @@ def supportList(request):
     template = 'programList.html'
     return render(request, template, context)
 
+
+def testpdf(request):
+    filepath = THIS_DIR + '/FaithNet.pdf'
+    return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def specialEvents(request):
     custom_css = """
