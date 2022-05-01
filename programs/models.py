@@ -23,6 +23,7 @@ PRT = 'Partner/Spouse Support'
 SBL = 'Sibling Support'
 TNS = 'Teen Support'
 FSS = 'Families Surviving Suicide Loss'
+FLR = 'Faith Leaders Retreat'
 
 PROGRAM_CHOICES = [
     (CARE, 'Caring and Sharing Meetings'),
@@ -44,6 +45,7 @@ PROGRAM_CHOICES = [
     (SBL, 'Sibling Support'),
     (TNS, 'Teen Support'),
     (FSS, 'Families Surviving Suicide Loss'),
+    (FLR, 'Faith Leaders Retreat')
     ]
 
 
