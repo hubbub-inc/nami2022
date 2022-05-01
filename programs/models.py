@@ -22,6 +22,7 @@ WFS = 'Whole Family Support'
 PRT = 'Partner/Spouse Support'
 SBL = 'Sibling Support'
 TNS = 'Teen Support'
+FSS = 'Families Surviving Suicide Loss'
 
 PROGRAM_CHOICES = [
     (CARE, 'Caring and Sharing Meetings'),
@@ -42,6 +43,7 @@ PROGRAM_CHOICES = [
     (PRT, 'Partner/Spouse Support'),
     (SBL, 'Sibling Support'),
     (TNS, 'Teen Support'),
+    (FSS, 'Families Surviving Suicide Loss'),
     ]
 
 
