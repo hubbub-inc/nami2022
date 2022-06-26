@@ -46,7 +46,7 @@ PROGRAM_CHOICES = [
     (SBL, 'Sibling Support'),
     (TNS, 'Teen Support'),
     (FSS, 'Families Surviving Suicide Loss'),
-    (FLR, 'Faith Leaders Retreat')
+    (FLR, 'Faith Leaders Retreat'),
     (POT, 'Parents of Teens Support Group')
     ]
 
