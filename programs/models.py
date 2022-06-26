@@ -13,6 +13,7 @@ FML = 'Family Meeting'
 IOOV = 'In Our Own Voice'
 P2P = 'Peer-to-Peer'
 PSG = 'Peer Support Group'
+POT = 'Parents of Teens Support Group'
 PSG2 = 'Peer Support Group2'
 WLK = 'WALK'
 SPRT = 'Spirituality Group'
@@ -46,6 +47,7 @@ PROGRAM_CHOICES = [
     (TNS, 'Teen Support'),
     (FSS, 'Families Surviving Suicide Loss'),
     (FLR, 'Faith Leaders Retreat')
+    (POT, 'Parents of Teens Support Group')
     ]
 
 
