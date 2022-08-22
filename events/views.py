@@ -8,6 +8,8 @@ from django.utils.safestring import mark_safe
 from django.core import serializers
 import calendar
 import datetime
+
+
 import json
 from .models import *
 from .utils import Calendar
@@ -17,7 +19,7 @@ from django.forms import ModelChoiceField
 from django.views.decorators.clickjacking import xframe_options_exempt
 
 
-
+today = date.today()
 
 
 class ProgramForm(forms.ModelForm):
@@ -45,14 +47,6 @@ class CalendarView(generic.ListView):
     context = {}
     template = "landing.html"
 
-
-
-
-
-
-
-
-
     def get_context_data(self, **kwargs):
         print('GETTING STANDARD')
 
@@ -66,8 +60,9 @@ class CalendarView(generic.ListView):
         today = datetime.date.today()
 
         addweek = today + datetime.timedelta(days=20)
+        upcoming = [i for i in Meeting.objects.filter(start_time__range=[today, "2023-12-01"])]
 
-        upcoming = [i for i in Meeting.objects.all()]
+      
 
         meetinglist = [
             {'title': meeting.program.name, 'instructions': meeting.program.instructions, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
