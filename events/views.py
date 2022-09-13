@@ -62,7 +62,7 @@ class CalendarView(generic.ListView):
         addweek = today + datetime.timedelta(days=20)
         upcoming = [i for i in Meeting.objects.filter(start_time__range=[today, "2023-12-01"])]
 
-      
+
 
         meetinglist = [
             {'title': meeting.program.name, 'instructions': meeting.program.instructions, 'programid': meeting.program.pk, 'day': str(meeting.start_time.day),
